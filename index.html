@@ -442,42 +442,149 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 // ── DEFAULT DATA ──────────────────────────────────────────────
 function defaultEvents(){return[
+  // ── TÊNIS — Australian Open ✅ ──
   {id:uid(),date:'2026-01-18',time:'Diurno (Melbourne)',sport:'tennis',competition:'Australian Open',name:'Australian Open 2026 — Início',teams:'128 tenistas',details:'Melbourne Park · Quadra dura'},
   {id:uid(),date:'2026-02-01',time:'Diurno (Melbourne)',sport:'tennis',competition:'Australian Open',name:'Australian Open 2026 — Finais ✅',teams:'Campeão: Carlos Alcaraz · Campeã: Elena Rybakina',details:'Melbourne Park, Austrália'},
+  // ── TÊNIS — Roland Garros ✅ ──
   {id:uid(),date:'2026-05-18',time:'Diurno (Paris)',sport:'tennis',competition:'Roland Garros',name:'Roland Garros 2026 — Início',teams:'128 tenistas',details:'Stade Roland Garros, Paris · Saibro'},
   {id:uid(),date:'2026-06-06',time:'Diurno (Paris)',sport:'tennis',competition:'Roland Garros',name:'Roland Garros 2026 — Final Feminina ✅',teams:'Mirra Andreeva 6-3 6-2 Maja Chwalińska',details:'Philippe-Chatrier · 1º Grand Slam de Andreeva (19 anos)'},
   {id:uid(),date:'2026-06-07',time:'Diurno (Paris)',sport:'tennis',competition:'Roland Garros',name:'Roland Garros 2026 — Final Masculina ✅',teams:'Alexander Zverev def. Flavio Cobolli',details:'Philippe-Chatrier · 1º Grand Slam de Zverev'},
-  {id:uid(),date:'2026-06-03',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 1 ✅',teams:'Knicks 105 x 95 Spurs',details:'San Antonio · Knicks vencem (1-0)'},
-  {id:uid(),date:'2026-06-05',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 2 ✅',teams:'Knicks 105 x 104 Spurs',details:'San Antonio · Knicks vencem (2-0)'},
+  // ── NBA FINALS ✅ ──
+  {id:uid(),date:'2026-06-03',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 1 ✅',teams:'Knicks 105 x 95 Spurs',details:'San Antonio · Knicks (1-0)'},
+  {id:uid(),date:'2026-06-05',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 2 ✅',teams:'Knicks 105 x 104 Spurs',details:'San Antonio · Knicks (2-0)'},
   {id:uid(),date:'2026-06-08',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 3 ✅',teams:'Spurs 115 x 111 Knicks',details:'Madison Square Garden · Spurs (2-1)'},
-  {id:uid(),date:'2026-06-10',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 4 ✅',teams:'Knicks 107 x 106 Spurs — virada de 29 pts',details:'MSG · OG Anunoby tip-in 1.2s · Knicks (3-1)'},
-  {id:uid(),date:'2026-06-13',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 5 ✅ 🏆 CAMPEÃO',teams:'Knicks 94 x 90 Spurs · NEW YORK KNICKS CAMPEÕES!',details:'San Antonio · MVP: Jalen Brunson 45pts · 1º título desde 1973'},
-  {id:uid(),date:'2026-06-11',time:'16h00 (Brasília)',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo 2026 — Abertura ✅',teams:'México 2 x 0 África do Sul',details:'Estádio Azteca, Cidade do México · Grupo A'},
-  {id:uid(),date:'2026-06-13',time:'19h00 (Brasília)',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Grupo C ✅',teams:'Brasil 1 x 1 Marrocos',details:'MetLife Stadium, Nova Jersey · Gols: Saibari e Vini Jr'},
-  {id:uid(),date:'2026-06-19',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Grupo C ✅',teams:'Brasil 3 x 0 Haiti',details:'Lincoln Financial Field, Filadélfia · Cunha (2x) e Vini Jr'},
-  {id:uid(),date:'2026-06-24',time:'19h00 (Brasília)',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Grupo C (hoje 🔴)',teams:'Escócia x Brasil',details:'Hard Rock Stadium, Miami · Brasil lidera com 4 pts'},
-  {id:uid(),date:'2026-06-27',time:'Vários horários',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Última rodada dos grupos',teams:'Rodadas simultâneas',details:'Definição dos 32 classificados'},
-  {id:uid(),date:'2026-06-29',time:'14h00 (Brasília)',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 16-avos (se 1º Grupo C)',teams:'Brasil x 2º Grupo F',details:'NRG Stadium, Houston'},
+  {id:uid(),date:'2026-06-10',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 4 ✅',teams:'Knicks 107 x 106 Spurs',details:'MSG · Virada de 29pts · OG Anunoby tip-in 1.2s · Knicks (3-1)'},
+  {id:uid(),date:'2026-06-13',time:'21h30 (Brasília)',sport:'basketball',competition:'NBA Finals',name:'NBA Finals — Jogo 5 ✅ 🏆',teams:'Knicks 94 x 90 Spurs · NEW YORK KNICKS CAMPEÕES!',details:'San Antonio · MVP: Jalen Brunson 45pts · 1º título desde 1973'},
+  // ── COPA DO MUNDO 2026 — Fase de Grupos ──
+  // Rodada 1 — 11 jun
+  {id:uid(),date:'2026-06-11',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo A ✅',teams:'México 2 x 0 África do Sul',details:'Estádio Azteca, Cidade do México'},
+  {id:uid(),date:'2026-06-11',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo A ✅',teams:'Coreia do Sul 2 x 1 República Tcheca',details:'Estádio Akron'},
+  // 12 jun
+  {id:uid(),date:'2026-06-12',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo B ✅',teams:'Canadá 1 x 1 Bósnia',details:'BMO Field, Toronto'},
+  {id:uid(),date:'2026-06-12',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo D ✅',teams:'Estados Unidos 4 x 1 Paraguai',details:'Estádio So-Fi, Inglewood'},
+  // 13 jun
+  {id:uid(),date:'2026-06-13',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo B ✅',teams:'Catar 1 x 1 Suíça',details:"Levi's Stadium, Santa Clara"},
+  {id:uid(),date:'2026-06-13',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo C ✅',teams:'Brasil 1 x 1 Marrocos',details:'MetLife Stadium, Nova Jersey · Saibari (MAR) · Vini Jr (BRA)'},
+  {id:uid(),date:'2026-06-13',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo C ✅',teams:'Haiti 0 x 1 Escócia',details:'Gillette Stadium, Foxborough'},
+  // 14 jun
+  {id:uid(),date:'2026-06-14',time:'01h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo D ✅',teams:'Austrália 2 x 0 Turquia',details:'BC Place, Vancouver'},
+  {id:uid(),date:'2026-06-14',time:'14h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo E ✅',teams:'Alemanha 7 x 1 Curaçao',details:'NRG Stadium, Houston'},
+  {id:uid(),date:'2026-06-14',time:'17h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo F ✅',teams:'Holanda 2 x 2 Japão',details:"AT&T Stadium, Arlington"},
+  {id:uid(),date:'2026-06-14',time:'20h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo E ✅',teams:'Costa do Marfim 1 x 0 Equador',details:'Lincoln Financial Field, Filadélfia'},
+  {id:uid(),date:'2026-06-14',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo F ✅',teams:'Suécia 5 x 1 Tunísia',details:'Estádio BBVA, Guadalupe'},
+  // 15 jun
+  {id:uid(),date:'2026-06-15',time:'13h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo H ✅',teams:'Espanha 0 x 0 Cabo Verde',details:'Mercedes-Benz Stadium, Atlanta'},
+  {id:uid(),date:'2026-06-15',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo G ✅',teams:'Irã 2 x 2 Nova Zelândia',details:'Estádio So-Fi, Inglewood'},
+  {id:uid(),date:'2026-06-15',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo H ✅',teams:'Arábia Saudita 1 x 1 Uruguai',details:'Hard Rock Stadium, Miami'},
+  {id:uid(),date:'2026-06-15',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo G ✅',teams:'Bélgica 1 x 1 Egito',details:'Lumen Field, Seattle'},
+  // 16 jun
+  {id:uid(),date:'2026-06-16',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo I ✅',teams:'França 3 x 1 Senegal',details:'MetLife Stadium, Nova Jersey'},
+  {id:uid(),date:'2026-06-16',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo I ✅',teams:'Iraque 1 x 4 Noruega',details:'Gillette Stadium, Foxborough'},
+  {id:uid(),date:'2026-06-16',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo J ✅',teams:'Argentina 3 x 0 Argélia',details:'Arrowhead Stadium, Kansas City'},
+  // 17 jun
+  {id:uid(),date:'2026-06-17',time:'01h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo J ✅',teams:'Áustria 3 x 1 Jordânia',details:"Levi's Stadium, Santa Clara"},
+  {id:uid(),date:'2026-06-17',time:'14h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo K ✅',teams:'Portugal 1 x 1 RD Congo',details:'NRG Stadium, Houston'},
+  {id:uid(),date:'2026-06-17',time:'17h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo L ✅',teams:'Inglaterra 4 x 2 Croácia',details:"AT&T Stadium, Arlington"},
+  {id:uid(),date:'2026-06-17',time:'20h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo L ✅',teams:'Gana 1 x 0 Panamá',details:'BMO Field, Toronto'},
+  {id:uid(),date:'2026-06-17',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo K ✅',teams:'Uzbequistão 1 x 3 Colômbia',details:'Estádio Azteca, Cidade do México'},
+  // 18 jun
+  {id:uid(),date:'2026-06-18',time:'13h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo A ✅',teams:'República Tcheca 1 x 1 África do Sul',details:'Mercedes-Benz Stadium, Atlanta'},
+  {id:uid(),date:'2026-06-18',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo B ✅',teams:'Suíça 4 x 1 Bósnia',details:'SoFi Stadium, Inglewood'},
+  {id:uid(),date:'2026-06-18',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo B ✅',teams:'Canadá 6 x 0 Catar',details:'BC Place, Vancouver'},
+  {id:uid(),date:'2026-06-18',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo A ✅',teams:'México 1 x 0 Coreia do Sul',details:'Estádio Akron'},
+  // 19 jun
+  {id:uid(),date:'2026-06-19',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo D ✅',teams:'Estados Unidos 2 x 0 Austrália',details:'Lumen Field, Seattle'},
+  {id:uid(),date:'2026-06-19',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo C ✅',teams:'Escócia 0 x 1 Marrocos',details:'Gillette Stadium, Foxborough'},
+  {id:uid(),date:'2026-06-19',time:'21h30',sport:'soccer',competition:'Copa do Mundo',name:'Grupo C ✅',teams:'Brasil 3 x 0 Haiti',details:'Lincoln Financial Field, Filadélfia · Cunha (2x) e Vini Jr'},
+  // 20 jun
+  {id:uid(),date:'2026-06-20',time:'01h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo D ✅',teams:'Turquia 0 x 1 Paraguai',details:"Levi's Stadium, Santa Clara"},
+  {id:uid(),date:'2026-06-20',time:'14h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo F ✅',teams:'Holanda 5 x 1 Suécia',details:'NRG Stadium, Houston'},
+  {id:uid(),date:'2026-06-20',time:'17h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo E ✅',teams:'Alemanha 2 x 1 Costa do Marfim',details:'BMO Field, Toronto'},
+  {id:uid(),date:'2026-06-20',time:'21h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo E ✅',teams:'Equador 0 x 0 Curaçao',details:'Arrowhead Stadium, Kansas City'},
+  // 21 jun
+  {id:uid(),date:'2026-06-21',time:'01h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo F ✅',teams:'Tunísia 0 x 4 Japão',details:'Estádio BBVA, Guadalupe'},
+  {id:uid(),date:'2026-06-21',time:'13h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo H ✅',teams:'Espanha 4 x 0 Arábia Saudita',details:'Mercedes-Benz Stadium, Atlanta'},
+  {id:uid(),date:'2026-06-21',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo G ✅',teams:'Bélgica 0 x 0 Irã',details:'Estádio So-Fi, Inglewood'},
+  {id:uid(),date:'2026-06-21',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo H ✅',teams:'Uruguai 2 x 2 Cabo Verde',details:'Hard Rock Stadium, Miami'},
+  {id:uid(),date:'2026-06-21',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo G ✅',teams:'Nova Zelândia 1 x 3 Egito',details:'BC Place, Vancouver'},
+  // 22 jun
+  {id:uid(),date:'2026-06-22',time:'14h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo J ✅',teams:'Argentina 2 x 0 Áustria',details:"AT&T Stadium, Arlington"},
+  {id:uid(),date:'2026-06-22',time:'18h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo I ✅',teams:'França 3 x 0 Iraque',details:'Lincoln Financial Field, Filadélfia'},
+  {id:uid(),date:'2026-06-22',time:'21h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo I ✅',teams:'Noruega 3 x 2 Senegal',details:'MetLife Stadium, Nova Jersey'},
+  // 23 jun
+  {id:uid(),date:'2026-06-23',time:'00h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo J ✅',teams:'Jordânia 1 x 2 Argélia',details:"Levi's Stadium, Santa Clara"},
+  {id:uid(),date:'2026-06-23',time:'14h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo K',teams:'Portugal x Uzbequistão',details:'NRG Stadium, Houston'},
+  {id:uid(),date:'2026-06-23',time:'17h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo L',teams:'Inglaterra x Gana',details:'Gillette Stadium, Foxborough'},
+  {id:uid(),date:'2026-06-23',time:'20h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo L',teams:'Panamá x Croácia',details:'BMO Field, Toronto'},
+  {id:uid(),date:'2026-06-23',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo K',teams:'Colômbia x RD Congo',details:'Estádio Akron, Zapopan'},
+  // 24 jun — ÚLTIMA RODADA GRUPOS A, B, C
+  {id:uid(),date:'2026-06-24',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo C 🔴',teams:'Escócia x Brasil',details:'Hard Rock Stadium, Miami · Brasil lidera (4pts)'},
+  {id:uid(),date:'2026-06-24',time:'19h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo C',teams:'Marrocos x Haiti',details:'Mercedes-Benz Stadium, Atlanta'},
+  {id:uid(),date:'2026-06-24',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo A',teams:'República Tcheca x México',details:'Estádio Azteca, Cidade do México'},
+  {id:uid(),date:'2026-06-24',time:'22h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo A',teams:'África do Sul x Coreia do Sul',details:'Estádio BBVA, Guadalupe'},
+  {id:uid(),date:'2026-06-24',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo B',teams:'Suíça x Canadá',details:'BC Place, Vancouver'},
+  {id:uid(),date:'2026-06-24',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo B',teams:'Bósnia x Catar',details:'Lumen Field, Seattle'},
+  // 25 jun — GRUPOS D, E, F
+  {id:uid(),date:'2026-06-25',time:'17h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo E',teams:'Equador x Alemanha',details:'MetLife Stadium, Nova Jersey'},
+  {id:uid(),date:'2026-06-25',time:'17h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo E',teams:'Curaçao x Costa do Marfim',details:'Lincoln Financial Field, Filadélfia'},
+  {id:uid(),date:'2026-06-25',time:'20h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo F',teams:'Japão x Suécia',details:"AT&T Stadium, Arlington"},
+  {id:uid(),date:'2026-06-25',time:'20h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo F',teams:'Tunísia x Holanda',details:'Arrowhead Stadium, Kansas City'},
+  {id:uid(),date:'2026-06-25',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo D',teams:'Turquia x Estados Unidos',details:'Estádio So-Fi, Inglewood'},
+  {id:uid(),date:'2026-06-25',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo D',teams:'Paraguai x Austrália',details:"Levi's Stadium, Santa Clara"},
+  // 26 jun — GRUPOS H, I
+  {id:uid(),date:'2026-06-26',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo I',teams:'Noruega x França',details:'Gillette Stadium, Foxborough'},
+  {id:uid(),date:'2026-06-26',time:'16h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo I',teams:'Senegal x Iraque',details:'BMO Field, Toronto'},
+  {id:uid(),date:'2026-06-26',time:'21h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo H',teams:'Cabo Verde x Arábia Saudita',details:'NRG Stadium, Houston'},
+  {id:uid(),date:'2026-06-26',time:'21h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo H',teams:'Uruguai x Espanha',details:'Estádio Akron, Zapopan'},
+  // 27 jun — GRUPOS G, J, K, L
+  {id:uid(),date:'2026-06-27',time:'00h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo G',teams:'Egito x Irã',details:'Lumen Field, Seattle'},
+  {id:uid(),date:'2026-06-27',time:'00h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo G',teams:'Nova Zelândia x Bélgica',details:'BC Place, Vancouver'},
+  {id:uid(),date:'2026-06-27',time:'18h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo L',teams:'Panamá x Inglaterra',details:'MetLife Stadium, Nova Jersey'},
+  {id:uid(),date:'2026-06-27',time:'18h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo L',teams:'Croácia x Gana',details:'Lincoln Financial Field, Filadélfia'},
+  {id:uid(),date:'2026-06-27',time:'20h30',sport:'soccer',competition:'Copa do Mundo',name:'Grupo K',teams:'Colômbia x Portugal',details:'Hard Rock Stadium, Miami'},
+  {id:uid(),date:'2026-06-27',time:'20h30',sport:'soccer',competition:'Copa do Mundo',name:'Grupo K',teams:'RD Congo x Uzbequistão',details:'Mercedes-Benz Stadium, Atlanta'},
+  {id:uid(),date:'2026-06-27',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo J',teams:'Argélia x Áustria',details:'Arrowhead Stadium, Kansas City'},
+  {id:uid(),date:'2026-06-27',time:'23h00',sport:'soccer',competition:'Copa do Mundo',name:'Grupo J',teams:'Jordânia x Argentina',details:"AT&T Stadium, Arlington"},
+  // ── TÊNIS — Wimbledon ──
   {id:uid(),date:'2026-06-29',time:'Diurno (Londres)',sport:'tennis',competition:'Wimbledon',name:'Wimbledon 2026 — Início',teams:'128 tenistas',details:'All England Club, Londres · Grama · 139ª edição'},
-  {id:uid(),date:'2026-07-04',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Oitavas de final',teams:'8 jogos',details:'Cidades a confirmar'},
-  {id:uid(),date:'2026-07-09',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Quartas de final',teams:'4 jogos',details:'Cidades a confirmar'},
+  // ── COPA DO MUNDO — Mata-mata ──
+  {id:uid(),date:'2026-06-29',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (1/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-06-30',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (2/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-01',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (3/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-02',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (4/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-03',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (5/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-04',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (6/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-05',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (7/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-06',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 32-avos de final (8/8)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-07',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Oitavas de final (1/4)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-08',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Oitavas de final (2/4)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-09',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Oitavas de final (3/4)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-10',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Oitavas de final (4/4)',teams:'A definir',details:''},
   {id:uid(),date:'2026-07-11',time:'Diurno (Londres)',sport:'tennis',competition:'Wimbledon',name:'Wimbledon 2026 — Final Feminina',teams:'A definir',details:'All England Club, Wimbledon'},
   {id:uid(),date:'2026-07-12',time:'Diurno (Londres)',sport:'tennis',competition:'Wimbledon',name:'Wimbledon 2026 — Final Masculina',teams:'A definir',details:'All England Club, Wimbledon'},
+  {id:uid(),date:'2026-07-09',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Quartas de final (1/2)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-10',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Quartas de final (2/2)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-11',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Quartas de final (3/4)',teams:'A definir',details:''},
+  {id:uid(),date:'2026-07-12',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Quartas de final (4/4)',teams:'A definir',details:''},
   {id:uid(),date:'2026-07-14',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Semifinal 1',teams:'A definir',details:'EUA'},
   {id:uid(),date:'2026-07-15',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — Semifinal 2',teams:'A definir',details:'EUA'},
   {id:uid(),date:'2026-07-18',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo — 3º lugar',teams:'A definir',details:'Hard Rock Stadium, Miami'},
   {id:uid(),date:'2026-07-19',time:'A confirmar',sport:'soccer',competition:'Copa do Mundo',name:'Copa do Mundo 2026 — FINAL 🏆',teams:'A definir',details:'MetLife Stadium, Nova Jersey'},
-  {id:uid(),date:'2026-08-11',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Oitavas (ida)',teams:'Pote 1: Flamengo, Corinthians · Pote 2: Palmeiras, Fluminense, Cruzeiro, Mirassol',details:'11-13 de agosto'},
+  // ── COPA LIBERTADORES 2026 ──
+  {id:uid(),date:'2026-08-11',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Oitavas (ida)',teams:'Flamengo, Corinthians, Palmeiras, Fluminense, Cruzeiro, Mirassol',details:'11-13 de agosto'},
   {id:uid(),date:'2026-08-18',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Oitavas (volta)',teams:'Definição dos 8 classificados',details:'18-20 de agosto'},
-  {id:uid(),date:'2026-08-31',time:'Diurno (Nova York)',sport:'tennis',competition:'US Open',name:'US Open 2026 — Início',teams:'128 tenistas',details:'USTA Billie Jean King National Tennis Center · Quadra dura'},
-  {id:uid(),date:'2026-09-03',time:'A confirmar',sport:'nfl',competition:'NFL Regular Season',name:'NFL Temporada Regular 2026 — Semana 1',teams:'A confirmar',details:''},
   {id:uid(),date:'2026-09-08',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Quartas (ida)',teams:'8 times classificados',details:''},
-  {id:uid(),date:'2026-09-12',time:'Diurno (Nova York)',sport:'tennis',competition:'US Open',name:'US Open 2026 — Final Feminina',teams:'A definir',details:'Flushing Meadows, Nova York'},
-  {id:uid(),date:'2026-09-13',time:'Diurno (Nova York)',sport:'tennis',competition:'US Open',name:'US Open 2026 — Final Masculina',teams:'A definir',details:'Flushing Meadows, Nova York'},
   {id:uid(),date:'2026-09-15',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Quartas (volta)',teams:'Definição dos semifinalistas',details:''},
   {id:uid(),date:'2026-10-20',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Semifinais (ida)',teams:'4 times',details:''},
   {id:uid(),date:'2026-10-27',time:'21h30 (Brasília)',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Semifinais (volta)',teams:'Definição dos finalistas',details:''},
   {id:uid(),date:'2026-11-28',time:'A confirmar',sport:'soccer',competition:'Copa Libertadores',name:'Copa Libertadores 2026 — Final 🏆',teams:'Jogo único',details:'Estádio Centenário, Montevidéu, Uruguai'},
+  // ── TÊNIS — US Open ──
+  {id:uid(),date:'2026-08-31',time:'Diurno (Nova York)',sport:'tennis',competition:'US Open',name:'US Open 2026 — Início',teams:'128 tenistas',details:'USTA Billie Jean King National Tennis Center · Quadra dura'},
+  {id:uid(),date:'2026-09-12',time:'Diurno (Nova York)',sport:'tennis',competition:'US Open',name:'US Open 2026 — Final Feminina',teams:'A definir',details:'Flushing Meadows, Nova York'},
+  {id:uid(),date:'2026-09-13',time:'Diurno (Nova York)',sport:'tennis',competition:'US Open',name:'US Open 2026 — Final Masculina',teams:'A definir',details:'Flushing Meadows, Nova York'},
+  // ── NFL ──
+  {id:uid(),date:'2026-09-03',time:'A confirmar',sport:'nfl',competition:'NFL Regular Season',name:'NFL Temporada Regular 2026 — Semana 1',teams:'A confirmar',details:'18 semanas · vai até jan/2027'},
+  // ── CAMPEONATO BRASILEIRO ──
   {id:uid(),date:'2026-12-06',time:'A confirmar',sport:'soccer',competition:'Campeonato Brasileiro',name:'Final do Campeonato Brasileiro 2026',teams:'A definir',details:''},
 ];}
 
